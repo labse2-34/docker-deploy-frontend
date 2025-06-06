@@ -1,12 +1,7 @@
-version: '3.8'
+version: '3.3'
 services:
   frontend:
     image: childaz/234-deploylab-frontend:update-html-content
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
     ports:
       - "9999:80"
-    environment:
-      - PORT=80
- 
+
